@@ -53,5 +53,38 @@ git push -u <remote> <branch>
 
 
 ############################
+############################
+############################
+############################
+############################
+############################
+Github cli
+############################
+############################
+############################
+############################
 
+#create interactivly
+gh repo create
+? What would you like to do?  [Use arrows to move, type to filter]
+  Create a new repository on GitHub from scratch
+  Create a new repository on GitHub from a template repository
+> Push an existing local repository to GitHub
+
+? What would you like to do? Push an existing local repository to GitHub
+? Path to local repository (.) [ENTER]
+? Repository name (git-setup) [ENTER]
+? Description [ENTER]
+
+? Visibility  [Use arrows to move, type to filter]
+> Public
+  Private
+  Internal
+  
+✓ Created repository <user-name>/<repo-name> on GitHub
+  https://github.com/<user-name>/<repo-name>
+? Add a remote? (Y/n) [Y] [ENTER]
+? What should the new remote be called? (origin) [ENTER] 
+✓ Added remote https://github.com/<user-name>/<repo-name>.git
+? Would you like to push commits from the current branch to "origin"? (Y/n)V [Y] [ENTER]  
 
