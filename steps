@@ -1,0 +1,57 @@
+#save credential on desk
+git config --global credential.helper store
+
+#remember credential for 15 min only
+git config --global credential.helper cache
+
+git config --global user.name "your_github_username"
+git config --global user.email "your_github_email"
+
+#set default init-branch name
+git config --global init.defaultBranch <"default-name">
+
+
+#List all variables set in config file
+git config -l
+
+
+##################
+#Create Personal Access Token on GitHub
+#From your GitHub account, go to 
+#Settings → Developer Settings → Personal Access Token → Tokens (classic) → Generate New Token (Give your password)
+# → Fillup the form → click Generate token → Copy the generated Token, 
+#it will be something like ghp_sFhFsSHhTzMDreGRLjmks4Tzuzgthdvfsr
+##################
+
+
+#since this is first time, we need to clone a repo to activite our account and store token on desk
+mkdir my-repo
+cd <my-repo>
+git clone https:github/<user-name>/<my-repo>.git
+
+#check current branch name
+git branch --show-current
+
+
+#change branch name
+git branch -m <old-name> <new-name>
+
+
+#in case this repo 
+
+#make dummy file
+touch afile
+
+#push changes back
+git add -A
+git commit -a -m "changes message"
+git push -u <remote> <branch>
+
+#if this is first time pushing, it will ask for user name and password
+#for password, use the generated token
+
+
+
+############################
+
+
